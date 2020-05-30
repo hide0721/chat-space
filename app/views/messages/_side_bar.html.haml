@@ -1,0 +1,19 @@
+.chat-side
+  .header
+    .header__box
+      %p.header__box__user-name
+        hide
+      %ul.header__box__menu
+        %li.header__box__menu__edit-user
+        = link_to "#" do
+          = icon('fa', 'edit')
+        %li.header__box__menu__new-group
+        = link_to "#" do
+          = icon('fa', 'cog')
+
+  .groups
+    = link_to "#" , class: "group" do
+      %p.group__group-name
+        グループ魂
+      %p.group__group-message
+        まだメッセージはありません
